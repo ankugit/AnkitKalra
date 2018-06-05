@@ -219,42 +219,5 @@ for j in range(100):
         
         
 workbook.close()
-    
 
-
-# In[6]:
-
-
-file=open("data.txt", "w")
-file.write("Hello")
-file.close()
-file=open("data.txt", "a")
-file.write("HELLLLOO")
-file.close()
-
-
-# In[7]:
-
-
-from openpyxl import Workbook
-wb=Workbook()
-
-
-# In[8]:
-
-
-ws=wb.active
-
-
-# In[9]:
-
-
-ws.title="Test-1"
-
-
-# In[10]:
-
-
-ws.cell(row=1, column=1, value=10)
-wb.save("test.xlsx")
 
